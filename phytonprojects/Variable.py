@@ -1,49 +1,52 @@
-#Las variables tn python son de tipado dinamico
+# Las variables en python son de tipado dinámico
 
-name = "Alejandro"
 
-#Notacion snake
+name = "Jose Chepe"
 
-last_name= " Villa Chica"
-mail = " nompar89@gmail.com"
-salary =9800000
+
+#Notación snake
+last_name = "Agudelo"
+mail = "jgabrielagudelov@gmail.com"
+salary = 1300000
 state = True
 note = 4.5
-gener = " Men"
+gender = 'M'
 
-#print (mail)
+print(mail)
 
-#Hablemos de la contatenación
+# Hablemos de concaternación
 
-#print("Nombre: " + name +  last_name)
+print("Nombre " + name)
 
-#Usando coma
+# Hablemos de concatenación usando coma
 
-#print("Nombre: " , name , last_name)
+print("Correo ", mail)
 
-#Hablemos de contatenar usando format
+# Hablemos de concatenación usando format
 
-print(f"Nombre:{name}\nApellidos:{last_name}\nCorreo:{mail}\nSalario:{salary}")
+print(f"Nombre {name}\n Apellido {last_name}\n  Correo {mail}\n  Salario {salary}")
 
-#Type que permite conocer de que tipo es una variable
+
+# type me permite conocer de que tipo es una variable
 
 print(type(salary))
 
-#Como capturar datos desde la consola
+# como capturar datos desde la consola input()
 
 phone = input("Telefono: ")
+print(f"Teléfono: {phone}")
 
-print(f"Telefono:{phone}")
 
-
-aux_transporte = int(input("Ingrese el aux de transporte"))
+aux_transporte = int(input("Ingrese el aux de Trasnporte"))
 
 total_salary = salary + aux_transporte
 
-print(f"El salario total es:{total_salary}")
-3244532707
+print(f"El salario total es: {total_salary} ")
+
 per_loan_discount = 0.3
 
-loan_discount = salary + aux_transporte - per_loan_discount
+loan_discount = salary * per_loan_discount
 
-print(f"El salario total es:{total_salary}\n Descuentos: \n Prestamos: {loan_discount}")
+total_salary = salary + aux_transporte - loan_discount
+
+print(f"El salario total es: {total_salary}\n Descuentos: \n Prestamos{loan_discount}")
